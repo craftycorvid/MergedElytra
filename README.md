@@ -14,3 +14,6 @@ players and armor stands.
 
 If the server is running Vanilla Tweaks' Armored Elytra datapack, installing this mod on your client will render 
 the elytra and chestplate.
+
+## TODO
+ - Add custom icons for merged elytra on the client
