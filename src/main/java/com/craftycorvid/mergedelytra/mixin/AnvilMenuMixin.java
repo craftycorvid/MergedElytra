@@ -1,5 +1,6 @@
-package xyz.ashyboxy.mc.metalwings.mixin;
+package com.craftycorvid.mergedelytra.mixin;
 
+import com.craftycorvid.mergedelytra.ArmoredElytra;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.llamalad7.mixinextras.sugar.ref.LocalIntRef;
@@ -16,7 +17,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import xyz.ashyboxy.mc.metalwings.ArmoredElytra;
 
 @Mixin(AnvilMenu.class)
 public abstract class AnvilMenuMixin extends ItemCombinerMenu {

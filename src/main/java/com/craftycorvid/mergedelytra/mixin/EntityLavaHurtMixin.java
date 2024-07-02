@@ -1,4 +1,4 @@
-package xyz.ashyboxy.mc.metalwings.mixin;
+package com.craftycorvid.mergedelytra.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

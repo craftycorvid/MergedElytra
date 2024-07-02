@@ -1,17 +1,17 @@
-package xyz.ashyboxy.mc.metalwings;
+package com.craftycorvid.mergedelytra;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class MetalWings implements ModInitializer {
-	public static final String MOD_ID = "metalwings";
-    public static final Logger LOGGER = LoggerFactory.getLogger("Metal Wings");
+public class MergedElytra implements ModInitializer {
+	public static final String MOD_ID = "mergedelytra";
+    public static final Logger LOGGER = LoggerFactory.getLogger("Merged Elytra");
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("want some fancy elytra? uwu~");
+		LOGGER.info("Merged Elytra Loaded!");
 	}
 
 	public static ResourceLocation id(String path) {

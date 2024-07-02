@@ -1,29 +1,30 @@
 {
 	"schemaVersion": 1,
-	"id": "metalwings",
+	"id": "mergedelytra",
 	"version": "${version}",
-	"name": "Metal Wings",
+	"name": "Merged Elytra",
 	"description": "Server sided, vanilla compatible armored elytra",
 	"authors": [
+		"CraftyCorvid",
 		"AshyBoxy"
 	],
 	"contact": {
-		"homepage": "https://github.com/AshyBoxy/MetalWings",
-		"sources": "https://github.com/AshyBoxy/MetalWings",
-		"issues": "https://github.com/AshyBoxy/MetalWings/issues"
+		"homepage": "https://github.com/craftycorvid/MergedElytra",
+		"sources": "https://github.com/craftycorvid/MergedElytra",
+		"issues": "https://github.com/craftycorvid/MergedElytra/issues"
 	},
 	"license": "MIT",
-	"icon": "assets/metalwings/icon.png",
+	"icon": "assets/mergedelytra/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"xyz.ashyboxy.mc.metalwings.MetalWings"
+			"com.craftycorvid.mergedelytra.MergedElytra"
 		]
 	},
 	"mixins": [
-		"metalwings.mixins.json",
+		"mergedelytra.mixins.json",
 		{
-			"config": "metalwings.client.mixins.json",
+			"config": "mergedelytra.client.mixins.json",
 			"environment": "client"
 		}
 	],

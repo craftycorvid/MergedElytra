@@ -1,4 +1,4 @@
-package xyz.ashyboxy.mc.metalwings.mixin;
+package com.craftycorvid.mergedelytra.mixin;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.tags.ItemTags;

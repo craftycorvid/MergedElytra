@@ -1,4 +1,4 @@
-package xyz.ashyboxy.mc.metalwings.mixin.client;
+package com.craftycorvid.mergedelytra.mixin.client;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;

@@ -1,4 +1,4 @@
-package xyz.ashyboxy.mc.metalwings;
+package com.craftycorvid.mergedelytra;
 
 import com.llamalad7.mixinextras.sugar.ref.LocalIntRef;
 import net.minecraft.ChatFormatting;
@@ -41,7 +41,7 @@ public class ArmoredElytra {
         MutableComponent chestplateName = chestplate.getHoverName().copy();
 
         if (chestplate.has(DataComponents.CUSTOM_NAME)) chestplateName.withStyle(ChatFormatting.ITALIC);
-        lore.add(Component.translatableWithFallback(MetalWings.MOD_ID + ".elytra.chestplate", "+ %s",
+        lore.add(Component.translatableWithFallback(MergedElytra.MOD_ID + ".elytra.chestplate", "+ %s",
                 chestplateName).setStyle(Style.EMPTY.withItalic(false).applyFormat(ChatFormatting.GOLD)));
 
         if (chestplate.has(DataComponents.TRIM))

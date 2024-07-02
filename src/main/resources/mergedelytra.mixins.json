@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "xyz.ashyboxy.mc.metalwings.mixin",
+	"package": "com.craftycorvid.mergedelytra.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"AnvilMenuMixin",
