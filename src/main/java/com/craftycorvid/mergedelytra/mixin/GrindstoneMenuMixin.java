@@ -40,13 +40,15 @@ public abstract class GrindstoneMenuMixin extends AbstractContainerMenu {
         ItemStack input1 = this.repairSlots.getItem(0);
         ItemStack input2 = this.repairSlots.getItem(1);
 
+        BundleContents bundleContents = input1.getOrDefault(DataComponents.BUNDLE_CONTENTS, BundleContents.EMPTY);
+
+        if (bundleContents.isEmpty()) return;
         if (!input2.isEmpty()) {
             this.resultSlots.setItem(0, ItemStack.EMPTY);
             return;
         }
 
-        Iterable<ItemStack> bundleContents = input1.getOrDefault(DataComponents.BUNDLE_CONTENTS, BundleContents.EMPTY).items();
-        bundleContents.forEach(item -> {
+        bundleContents.items().forEach(item -> {
             if (item.is(ItemTags.CHEST_ARMOR)) {
                 this.resultSlots.setItem(0, item);
                 return;
@@ -76,10 +78,12 @@ public abstract class GrindstoneMenuMixin extends AbstractContainerMenu {
 
         @Inject(method = "onTake", at = @At("HEAD"), cancellable = true)
         private void takeSeparatedChestplate(Player player, ItemStack stack, CallbackInfo ci) {
-            Iterable<ItemStack> bundleContents =
+            BundleContents bundleContents =
                     ((GrindStoneMenuAccessor) field_16780).getRepairSlots().getItem(0).getOrDefault(DataComponents.BUNDLE_CONTENTS,
-                            BundleContents.EMPTY).items();
-            bundleContents.forEach(item -> {
+                            BundleContents.EMPTY);
+
+            if (bundleContents.isEmpty()) return;
+            bundleContents.items().forEach(item -> {
                 if (item.is(Items.ELYTRA)) {
                     val$access.execute((level, blockPos) -> {
                         level.levelEvent(LevelEvent.SOUND_GRINDSTONE_USED, blockPos, 0);
