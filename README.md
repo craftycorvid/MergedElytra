@@ -8,7 +8,7 @@ This is a fork of [Metal Wings by AshyBoxy](https://github.com/AshyBoxy/MetalWin
 ## Usage
 You can combine elytra with a chestplate in an anvil, make sure you put the chestplate in the left slot. You can 
 then separate them by putting them in a grindstone. Dropping an armored elytra with a merged netherite chestplate 
-will burn the elytra and drop the netherite chestplate.
+into lava will burn the elytra and drop the netherite chestplate.
 
 The mod works perfectly fine server only, but when on the client it'll render both the elytra and chestplate on 
 players and armor stands.
